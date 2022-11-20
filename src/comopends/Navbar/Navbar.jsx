@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink  } from 'react-router-dom'
 import './Navbar.css'
+
 export default class Navbar extends Component {
-  render() {
+  render() { 
     return (
       <>
  <nav className="navbar navbar-expand-lg nav-bg fixed-top p-3">
@@ -14,13 +15,13 @@ export default class Navbar extends Component {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className=" nav-link active fs-4 fw-bolder text-white" aria-current="page" to="portfolio">Portfolio</Link>
+          <NavLink  className=" nav-link  fs-4 fw-bolder text-white" aria-current="page" to="portfolio">Portfolio</NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link  fs-4 fw-bolder text-white" aria-current="page" to="about">About</Link>
+          <NavLink className="nav-link fs-4 fw-bolder text-white"  aria-current="page" to="about">About</NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link  fs-4 fw-bolder text-white" aria-current="page" to="contact">Contact</Link>
+          <NavLink className="nav-link fs-4 fw-bolder text-white"  aria-current="page" to="contact">Contact</NavLink>
         </li>
       </ul>
     </div>
