@@ -18,7 +18,7 @@ export default class Home extends Component {
       <div className='Home-line'></div>
       </div>
 
-      <h3 className='text-white'>Graphic Artist - Web Designer - Illustrator</h3>
+      <h3 className='text-white text-center'>Graphic Artist - Web Designer - Illustrator</h3>
 
  
 
